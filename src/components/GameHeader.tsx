@@ -14,10 +14,10 @@ const GameHeader: React.FC<GameHeaderProps> = ({ matches, totalPairs }) => {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
     >
-      <h1 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
-        Match the Spanish Word!
+      <h1 className="text-4xl md:text-5xl font-bold text-white mb-4 tracking-wider">
+        Magic Match
       </h1>
-      <div className="text-xl text-gray-600">
+      <div className="text-xl text-primary-foreground/80">
         Matches: {matches}/{totalPairs}
       </div>
     </motion.div>

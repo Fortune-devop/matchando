@@ -10,10 +10,10 @@ interface GameFooterProps {
 
 const GameFooter: React.FC<GameFooterProps> = ({ onRestart, matches, totalPairs }) => {
   const messages = [
-    "¡Vamos! You can do it! 🌟",
-    "Great progress! Keep going! ⭐",
-    "Almost there! ¡Sigue así! 🎯",
-    "¡Excelente! You're doing great! 🌈"
+    "The quest begins! 🗡️",
+    "Your magic grows stronger! ✨",
+    "Almost there, brave one! 🛡️",
+    "Victory awaits! 🏆"
   ];
 
   const currentMessage = messages[Math.min(Math.floor((matches / totalPairs) * messages.length), messages.length - 1)];
@@ -25,12 +25,12 @@ const GameFooter: React.FC<GameFooterProps> = ({ onRestart, matches, totalPairs 
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
     >
-      <p className="text-lg text-gray-600 mb-4">{currentMessage}</p>
+      <p className="text-lg text-primary-foreground/80 mb-4">{currentMessage}</p>
       <Button
         onClick={onRestart}
-        className="bg-blue-500 hover:bg-blue-600 text-white px-8 py-2 rounded-lg transition-colors"
+        className="bg-primary hover:bg-primary/80 text-white px-8 py-2 rounded-lg transition-colors border border-primary/20"
       >
-        Restart Game
+        New Game
       </Button>
     </motion.div>
   );

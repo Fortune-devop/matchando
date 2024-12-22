@@ -105,12 +105,12 @@ const MemoryGame = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-white to-blue-50 p-4 md:p-8">
+    <div className="min-h-screen bg-background p-4 md:p-8">
       <div className="max-w-4xl mx-auto">
         <GameHeader matches={matches} totalPairs={wordPairs.length} />
         
         <motion.div 
-          className="grid grid-cols-2 md:grid-cols-4 gap-4 my-8"
+          className="grid grid-cols-4 gap-4 my-8"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
