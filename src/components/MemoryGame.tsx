@@ -7,14 +7,14 @@ import GameFooter from './GameFooter';
 import { shuffle } from '../utils/gameUtils';
 
 const wordPairs = [
-  { spanish: "perro", english: "dog" },
-  { spanish: "gato", english: "cat" },
-  { spanish: "casa", english: "house" },
-  { spanish: "árbol", english: "tree" },
-  { spanish: "sol", english: "sun" },
-  { spanish: "luna", english: "moon" },
-  { spanish: "libro", english: "book" },
-  { spanish: "agua", english: "water" },
+  { spanish: "perro (dog)", english: "dog" },
+  { spanish: "gato (cat)", english: "cat" },
+  { spanish: "casa (house)", english: "house" },
+  { spanish: "árbol (tree)", english: "tree" },
+  { spanish: "sol (sun)", english: "sun" },
+  { spanish: "luna (moon)", english: "moon" },
+  { spanish: "libro (book)", english: "book" },
+  { spanish: "agua (water)", english: "water" },
 ];
 
 export interface CardType {
